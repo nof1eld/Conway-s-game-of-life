@@ -221,7 +221,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('speedBtn').textContent = 'Speed: Normal';
         }
         
-        // Restart interval if game is running
         if (game.isRunning) {
             clearInterval(intervalId);
             intervalId = setInterval(() => {
