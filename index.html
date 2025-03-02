@@ -5,18 +5,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="toolbar">
-      <button id="startBtn">Start/Stop</button>
-      <button id="clearBtn">Clear</button>
-      <button id="randomBtn">Random</button>
-      <button id="gliderGunBtn">Glider Gun</button>
-      <button id="pulsarBtn">Pulsar</button>
-      <button id="pentaDecathlonBtn">PentaDecathlon</button>
-      <button id="speedBtn">Speed: Normal</button>
-      <button id="darkModeBtn">Toggle Dark Mode</button>
+    <header>
+      <h1>
+        Conway's Game of Life by
+        <a href="https://github.com/nof1eld" target="_blank">Nof1eld</a>
+      </h1>
+    </header>
+    <div class="main-content">
+      <div class="toolbar">
+        <button id="startBtn">Start/Stop</button>
+        <button id="clearBtn">Clear</button>
+        <button id="randomBtn">Random</button>
+        <button id="gliderGunBtn">Glider Gun</button>
+        <button id="pulsarBtn">Pulsar</button>
+        <button id="pentaDecathlonBtn">PentaDecathlon</button>
+        <button id="speedBtn">Speed: Normal</button>
+        <button id="darkModeBtn">Toggle Dark Mode</button>
+      </div>
+      <canvas id="gridCanvas"></canvas>
     </div>
-    <canvas id="gridCanvas"></canvas>
-
     <script src="script.js"></script>
   </body>
 </html>

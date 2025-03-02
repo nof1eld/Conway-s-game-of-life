@@ -158,12 +158,11 @@ class Renderer {
 }
 // Initialize Game
 document.addEventListener('DOMContentLoaded', () => {
-    const game = new Game(100, 200, 6);
+    const game = new Game(180, 360, 10);
     const canvas = document.getElementById('gridCanvas');
     const renderer = new Renderer(canvas, game);
     let intervalId = null;
     let speed = 80;
-    let isDarkMode = false;
     
     canvas.addEventListener('mousedown', (event) => renderer.handleMouseDown(event));
     canvas.addEventListener('mousemove', (event) => renderer.handleMouseMove(event));
