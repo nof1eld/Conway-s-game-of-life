@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background-color: #2c3e50;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #34495e;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2c3e50;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+canvas {
+  flex-grow: 1;
+  margin: 20px;
+  border: 2px solid #2c3e50;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+canvas:hover {
+  cursor: crosshair;
+}
+
+/* Add these new styles */
+.dark-mode {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+}
+
+.dark-mode button {
+  background-color: #00ff00;
+  color: #1a1a1a;
+}
+
+.dark-mode button:hover {
+  background-color: #00cc00;
+}
+
+.dark-mode canvas {
+  border-color: #00ff00;
+  box-shadow: 0 4px 6px rgba(0, 255, 0, 0.1);
+}
